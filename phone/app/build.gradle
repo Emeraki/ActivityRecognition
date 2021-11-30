@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
+    defaultConfig {
+        applicationId "com.uestc.zl427.newPhone2"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    testOptions {
+
+        unitTests.returnDefaultValues = true
+
+    }
+
+
+}
+
+dependencies {
+
+//    implementation files('libs\\okhttp-4.9.2.jar')
+//    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation'junit:junit:4.12'
+
+    testImplementation"org.mockito:mockito-core:1.9.5"
+    implementation "com.alibaba:fastjson:1.1.54.android"
+    implementation 'com.squareup.okhttp3:okhttp:3.8.0'
+
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:25.3.1'
+
+    testCompile 'junit:junit:4.12'
+    implementation files('libs/libandroid_tensorflow_inference_java.jar')
+}

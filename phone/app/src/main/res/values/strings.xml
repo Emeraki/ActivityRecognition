@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MobileData</string>
+    <string name="title">Conductor</string>
+    <string name="subtitle">—— Up,Down,Left,Right</string>
+    <string name="start_button">Start</string>
+    <!--电池策略设置相关文字-->
+    <string name="str_battery_strategy_miui">设置后台[无限制]</string>
+    <string name="str_battery_strategy_huawei">设置[电池优化]</string>
+    <string name="str_battery_strategy_oppo">关闭应用速冻</string>
+    <string name="str_battery_strategy_vivo">允许后台高耗电</string>
+    <!--电池策略设置提示相关文字-->
+    <string name="str_battery_strategy_tip_miui">设置MIUI系统后台配置为[无限制]</string>
+    <string name="str_battery_strategy_tip_huawei">前往[电池优化]-[应用名称]，设置[不允许]</string>
+    <string name="str_battery_strategy_tip_oppo">前往[电池]-[应用名称]，关闭[后台冻结]和[检测到异常时自动优化]</string>
+    <string name="str_battery_strategy_tip_vivo">前往[电池]-[后台耗电管理]-[应用名称]，设置[允许后台高耗电]</string>
+    <string name="str_battery_strategy_error">跳转设置失败</string>
+    <string name="str_battery_strategy_error2">机型不匹配，暂时无法支持该功能</string>
+
+</resources>
